@@ -14,8 +14,21 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
+		<version>1.5.10.RELEASE</version>
 	</parent>
+
+	<distributionManagement>
+		<repository>
+			<id>aws-release</id>
+			<name>AWS Release Repository</name>
+			<url>s3://rgmaven/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>aws-snapshot</id>
+			<name>AWS Snapshot Repository</name>
+			<url>s3://rgmaven/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
