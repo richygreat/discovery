@@ -12,6 +12,7 @@
       <outputDirectory>/</outputDirectory>
       <includes>
         <include>*.yml</include>
+        <include>*.sh</include>
       </includes>
     </fileSet>
     <fileSet>
