@@ -19,18 +19,7 @@
 		<version>1.5.10.RELEASE</version>
 	</parent>
 
-	<distributionManagement>
-		<repository>
-			<id>aws-release</id>
-			<name>AWS Release Repository</name>
-			<url>s3://rgmaven/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>aws-snapshot</id>
-			<name>AWS Snapshot Repository</name>
-			<url>s3://rgmaven/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+	
 
 	<dependencyManagement>
 		<dependencies>
@@ -64,30 +53,8 @@
                                         <executable>true</executable>
                                 </configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<descriptors>
-								<descriptor>assembly.xml</descriptor>
-							</descriptors>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+			
 		</plugins>
-		<extensions>
-			<extension>
-				<groupId>org.springframework.build</groupId>
-				<artifactId>aws-maven</artifactId>
-				<version>5.0.0.RELEASE</version>
-			</extension>
-		</extensions>
+		
 	</build>
 </project>
