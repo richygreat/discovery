@@ -2,7 +2,7 @@
 
 while [ true ]
 do
-    if [ "$(curl -s http://localhost:80/health)" = '{"description":"Composite Discovery Client","status":"UP"}' ]
+    if [ "$(curl -s http://localhost:8761/health)" = '{"description":"Composite Discovery Client","status":"UP"}' ]
     then
         exit 0
     else
