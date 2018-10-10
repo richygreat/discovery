@@ -2,15 +2,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.rg.boot</groupId>
+	<groupId>com.github.richygreat</groupId>
 	<artifactId>discovery</artifactId>
-	<version>${revision}${changelist}</version>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>Discovery Service</name>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<changelist>-SNAPSHOT</changelist>
-		<revision>1.0.0</revision>
 	</properties>
 
 	<parent>
@@ -18,8 +17,6 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
 	</parent>
-
-	
 
 	<dependencyManagement>
 		<dependencies>
@@ -49,12 +46,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-                                        <executable>true</executable>
-                                </configuration>
 			</plugin>
-			
 		</plugins>
-		
 	</build>
 </project>
